@@ -6,11 +6,11 @@ const banana = () => {
 
     return (
         <>
-            <p>This page is banana</p>
-            <p>Request api with query</p>
+            <h2>This page is banana</h2>
+            <h4>Request api with query</h4>
             <Link href="/apple">
                 <a>
-                    <p>Go to apple page</p>
+                    <h4>Go to apple page</h4>
                 </a>
             </Link>
             <div style={{ border: '2px solid #000', padding: 16 }}>
