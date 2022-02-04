@@ -8,7 +8,18 @@ const apple = () => {
     return (
         <>
             <h2>This page is apple</h2>
-            <h4>Request api with query</h4>
+            <h4>
+                Request api with query
+                <br />
+                If{' '}
+                <em
+                    style={{ fontStyle: 'italic', textDecoration: 'underline' }}
+                >
+                    any query
+                </em>{' '}
+                has the requested cached data, do not send a request and receive
+                cached data.
+            </h4>
             <Link href="/banana">
                 <a>
                     <h4>Go to banana page</h4>

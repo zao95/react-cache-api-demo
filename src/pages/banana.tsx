@@ -7,7 +7,19 @@ const banana = () => {
     return (
         <>
             <h2>This page is banana</h2>
-            <h4>Request api with query</h4>
+            <h4>
+                Request api without query
+                <br />
+                If{' '}
+                <em
+                    style={{ fontStyle: 'italic', textDecoration: 'underline' }}
+                >
+                    the same query
+                </em>{' '}
+                has the requested cached data, do not send a request and receive
+                cached data.
+                <br />
+            </h4>
             <Link href="/apple">
                 <a>
                     <h4>Go to apple page</h4>
