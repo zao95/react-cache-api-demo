@@ -2,11 +2,11 @@ import { useCacheApi } from 'react-cache-api'
 import Link from 'next/link'
 
 const banana = () => {
-    const { data, error, isValidation } = useCacheApi('/')
+    const { data } = useCacheApi('/')
 
     return (
         <>
-            <h2>This page is banana</h2>
+            <h2>This page is banana🍌</h2>
             <h4>
                 Request api without query
                 <br />
@@ -14,7 +14,7 @@ const banana = () => {
                 <em
                     style={{ fontStyle: 'italic', textDecoration: 'underline' }}
                 >
-                    the same query
+                    any query
                 </em>{' '}
                 has the requested cached data, do not send a request and receive
                 cached data.
@@ -25,6 +25,11 @@ const banana = () => {
                     <h4>Go to apple page</h4>
                 </a>
             </Link>
+            <h3>Data fetching code</h3>
+            <div style={{ border: '2px solid #000', padding: 16 }}>
+                <p>const &#123;data&#125; = useCacheApi('/')</p>
+            </div>
+            <h3>Response data</h3>
             <div style={{ border: '2px solid #000', padding: 16 }}>
                 <h4>Response data</h4>
                 <pre>data: {JSON.stringify(data, undefined, 4)}</pre>
