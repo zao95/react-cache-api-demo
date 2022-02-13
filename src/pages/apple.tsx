@@ -2,7 +2,7 @@ import { useCacheApi } from 'react-cache-api'
 import Link from 'next/link'
 
 const apple = () => {
-    const query = { fruit: 'apple' }
+    const query = { fruit: 'apple', temp: 2 }
     const { data } = useCacheApi('/', query)
 
     return (
@@ -20,7 +20,7 @@ const apple = () => {
                 has the requested cached data, do not send a request and receive
                 cached data.
             </h4>
-            <Link href="/banana">
+            <Link href='/banana'>
                 <a>
                     <h4>Go to banana page</h4>
                 </a>
